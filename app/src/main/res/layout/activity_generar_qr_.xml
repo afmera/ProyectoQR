@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerarQR_Activity">
+
+    <TextView android:text="Lector De QR"
+        android:id="@+id/loginTv1"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_below="@id/loginTv1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edtidentificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorPrimary"
+        android:hint="Identificacion"
+        android:inputType="text|number"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+    </View>
+    <EditText
+        android:id="@+id/edtcontraseña"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+    </View>
+    <Button
+        android:id="@+id/btnenviar"
+        android:text="login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnregistro"
+            android:text="guardar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ivCodigoGenerado"
+            android:layout_width="234dp"
+            android:layout_gravity="center"
+            android:layout_height="198dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginHorizontal="16dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Olvido su contraseña?"
+        android:id="@+id/txtlogin"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
